@@ -1,0 +1,60 @@
+@import 'mixins';
+
+$font-serif-family:
+  system-ui,
+  -apple-system,
+  blinkmacsystemfont,
+  'Segoe UI',
+  roboto,
+  'Helvetica Neue',
+  helvetica,
+  arial,
+  sans-serif,
+  'Apple Color Emoji',
+  'Segoe UI Emoji',
+  'Segoe UI Symbol';
+$font-mono-family: sfmono-regular, menlo, monaco, consolas, 'Liberation Mono', 'Courier New', monospace;
+$font-base: 'OpenSans', $font-serif-family, sans-serif;
+
+/*
+* colors
+*/
+$primary: #2e2c36;
+$secondary: #242228;
+$white: #fff;
+$black: #313234;
+$opacityBg: rgba(0 0 0 / 60%);
+$negative: #9c1e1e;
+
+/*
+* fonts
+*/
+$font-s: 12px;
+$font-m: 14px;
+$font-xm: 15px;
+$font-l: 16px;
+$font-b: 20px;
+
+/*
+* sizes
+*/
+
+/*
+* z-index
+*/
+
+$modalZ: 400;
+$navbarZ: 300;
+$submenuZ: 10;
+$sidebarZ: 100;
+$skillTreeZ: 200;
+$overlayZ: 10;
+$infoPanelZ: 20;
+
+/*
+* Breakpoints
+*/
+$media-phone: 650px;
+$media-tablet: 850px;
+$media-tablet-landscape: 960px;
+$media-desktop: 1180px;

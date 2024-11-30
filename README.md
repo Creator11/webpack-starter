@@ -1,2 +1,1 @@
-# webpack-starter
-webpack-starter config
+# webpack starter config

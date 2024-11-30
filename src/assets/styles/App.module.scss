@@ -1,0 +1,12 @@
+@import '@/assets/styles/variables';
+
+body {
+  font-family: $font-base;
+}
+
+.App,
+html {
+  font-family: $font-base;
+  background-color: $secondary;
+  color: $white;
+}

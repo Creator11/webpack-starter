@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": ".",
   "scripts": {
-    "start": "node --max-old-space-size=4096 ./node_modules/.bin/webpack serve --env mode=development",
+    "start": "node   ./node_modules/.bin/webpack serve --env mode=development",
     "build:dev": "./node_modules/.bin/webpack --env mode=development",
     "build:prod": "./node_modules/.bin/webpack --env mode=production",
     "build": "./node_modules/.bin/webpack --env mode=production",
@@ -75,12 +75,12 @@
     "webpack-bundle-analyzer": "^4.10.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.2",
-    "webpackbar": "^6.0.1"
+    "webpackbar": "^6.0.1",
+    "@babel/standalone": "^7.24.6",
+    "babel-standalone": "^6.26.0"
   },
   "dependencies": {
-    "@babel/standalone": "^7.24.6",
     "axios": "^1.7.3",
-    "babel-standalone": "^6.26.0",
     "classnames": "^2.5.1",
     "detect-port": "^1.6.1",
     "history": "^5.3.0",

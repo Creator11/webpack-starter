@@ -10,7 +10,6 @@ import App from "@/App";
 import ErrorBoundary from "@/providers/ErrorBoundary/ErrorBoundary";
 
 const AppRouter = () => {
-  // Используем createHashRouter, если в режиме разработки
   const router = (
     __ENV__ === "development" ? createHashRouter : createBrowserRouter
   )(

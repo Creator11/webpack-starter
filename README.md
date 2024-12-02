@@ -1,5 +1,5 @@
 
-![Logo]([https://static.tildacdn.com/tild3861-3730-4833-a565-336536643039/photo.svg](https://repository-images.githubusercontent.com/892995719/20e40a5d-f1f6-4389-ab43-59c398352113)
+![Logo]([https://static.tildacdn.com/tild3861-3730-4833-a565-336536643039/photo.svg](https://repository-images.githubusercontent.com/892995719/20e40a5d-f1f6-4389-ab43-59c398352113))
 
 
 # webpack TS bundle

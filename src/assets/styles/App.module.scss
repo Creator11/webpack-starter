@@ -1,12 +1,12 @@
-@use "variables" as v;
+@use 'variables' as v;
 
 body {
-  font-family: v.$font-base;
+	font-family: v.$font-base;
 }
 
 .App,
 html {
-  font-family: v.$font-base;
-  background-color: v.$secondary;
-  color: v.$white;
+	font-family: v.$font-base;
+	background-color: v.$primary;
+	color: v.$white;
 }

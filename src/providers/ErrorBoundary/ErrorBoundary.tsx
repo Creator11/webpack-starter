@@ -1,40 +1,40 @@
-import PageError from "@/Components/PageError/PageError";
-import React, { ErrorInfo, ReactNode } from "react";
+import PageError from '@/components/PageError/PageError'
+import React, { ErrorInfo, ReactNode } from 'react'
 
 interface ErrorBoundaryProps {
-  children: ReactNode;
+	children: ReactNode
 }
 
 interface ErrorBoundaryState {
-  hasError: boolean;
+	hasError: boolean
 }
 
 class ErrorBoundary extends React.Component<
-  ErrorBoundaryProps,
-  ErrorBoundaryState
+	ErrorBoundaryProps,
+	ErrorBoundaryState
 > {
-  constructor(props: ErrorBoundaryProps) {
-    super(props);
-    this.state = { hasError: false };
-  }
+	constructor(props: ErrorBoundaryProps) {
+		super(props)
+		this.state = { hasError: false }
+	}
 
-  static getDerivedStateFromError() {
-    return { hasError: true };
-  }
+	static getDerivedStateFromError() {
+		return { hasError: true }
+	}
 
-  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.error("Error caught by ErrorBoundary:", error, errorInfo);
-  }
+	componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+		console.error('Error caught by ErrorBoundary:', error, errorInfo)
+	}
 
-  render() {
-    const { hasError } = this.state;
-    const { children } = this.props;
-    if (hasError) {
-      return <PageError />;
-    }
+	render() {
+		const { hasError } = this.state
+		const { children } = this.props
+		if (hasError) {
+			return <PageError />
+		}
 
-    return children;
-  }
+		return children
+	}
 }
 
-export default ErrorBoundary;
+export default ErrorBoundary

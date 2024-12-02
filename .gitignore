@@ -12,7 +12,6 @@ yarn-error.log*
 
 
 #build 
-build/
 
 # Runtime data
 pids/
@@ -87,10 +86,7 @@ out/
 
 # jest cache
 jest/
-
-# Vite
-node_modules/.vite/
-
+ 
 # Yarn berry cache
 .yarn/cache/
 .yarn/unplugged/

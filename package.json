@@ -1,9 +1,9 @@
 {
   "name": "webpack-starter",
-  "version": "1.2",
-  "description": "",
+  "version": "1.3",
+  "description": "A starter Webpack project with React and TypeScript, optimized for fast development and production builds.",
   "main": "index.js",
-  "homepage": ".",
+  "homepage": "https://github.com/Creator11/webpack-starter",
   "scripts": {
     "start": "node   ./node_modules/.bin/webpack serve --env mode=development",
     "build:dev": "./node_modules/.bin/webpack --env mode=development",
@@ -16,10 +16,22 @@
     "lint:ts:fix": "eslint  -c config/eslint/eslint.config.mjs 'src/**/*.{ts,tsx}' --fix",
     "lint:scss": "npx stylelint -c config/stylelint/.stylelintrc.json '**/*.scss'",
     "lint:scss:fix": "npx stylelint -c config/stylelint/.stylelintrc.json '**/*.scss' --fix",
-    "unit": "jest --config ./config/jest/jest.config.ts"
+    "test:unit": "jest --config ./config/jest/jest.config.ts"
   },
-  "keywords": [],
-  "author": "troshin",
+  "keywords": [
+    "webpack",
+    "react",
+    "typescript",
+    "starter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Creator11/webpack-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Creator11/webpack-starter/issues"
+  },
+  "author": "Creator11",
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.12.0",

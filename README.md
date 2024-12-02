@@ -103,25 +103,8 @@ const router = createHashRouter;
 ```javascript
 - run: rsync -avz -e "sshpass -p 'ВАШ ПАРОЛЬ от SSH' ssh -o StrictHostKeyChecking=no" build/ admin@netangels.ru:/home/admin/mysite.ru/app
 ```
-
-настройка для gitLub
-
--будет позже-
-
-## Roadmap
-
-- добавить тесты
-- добавить шаблоны для верстки
-- добавить документацию
-- добавить кастомные хуки
-- добавить пресеты на typeScript
-
-## ссылки
-
-- [autoprefixer](https://autoprefixer.github.io/ru/)
-- [favicon Generator](https://www.npmjs.com/package/favicons-webpack-plugin?activeTab=readme)
-- [Базовый Вебпак](https://habr.com/ru/articles/514838/)
-
+ 
+ 
 ## Автор
 
 - [@troshin](https://github.com/dTroshin11)

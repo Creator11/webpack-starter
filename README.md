@@ -1,4 +1,4 @@
-![Logo](https://github.com/Creator11/webpack-starter/src/assets/img/logo.jpg)
+![Logo](https://github.com/Creator11/webpack-starter/raw/main/src/assets/img/logo.jpg)
 
 # webpack TS bundle
 

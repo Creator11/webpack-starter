@@ -1,11 +1,19 @@
 import { Suspense } from "react";
-import { RouterProvider, Navigate, createBrowserRouter } from "react-router";
+import {
+  RouterProvider,
+  Navigate,
+  createBrowserRouter,
+  createHashRouter,
+} from "react-router";
 import { NotFound, HomePage } from "@/pages";
 import App from "@/App";
 import ErrorBoundary from "@/providers/ErrorBoundary/ErrorBoundary";
 
 const AppRouter = () => {
-  const router = createBrowserRouter(
+  // Используем createHashRouter, если в режиме разработки
+  const router = (
+    __ENV__ === "development" ? createHashRouter : createBrowserRouter
+  )(
     [
       {
         path: "/",

@@ -1,14 +1,12 @@
-import s from '@/assets/styles/App.module.scss';
-import { Outlet } from 'react-router-dom';
-import '@/assets/styles/index.scss';
-
-
+import s from "@/assets/styles/App.module.scss";
+import { Outlet } from "react-router";
+import "@/assets/styles/index.scss";
 
 export const App = () => {
-return (
-      <div className={s.App}>
-          <Outlet />
-      </div>
+  return (
+    <div className={s.App}>
+      <Outlet />
+    </div>
   );
 };
 

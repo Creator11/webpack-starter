@@ -1,12 +1,12 @@
-@import '@/assets/styles/variables';
+@use "variables" as v;
 
 body {
-  font-family: $font-base;
+  font-family: v.$font-base;
 }
 
 .App,
 html {
-  font-family: $font-base;
-  background-color: $secondary;
-  color: $white;
+  font-family: v.$font-base;
+  background-color: v.$secondary;
+  color: v.$white;
 }

@@ -1,20 +1,19 @@
-@import 'mixins';
-
 $font-serif-family:
   system-ui,
   -apple-system,
   blinkmacsystemfont,
-  'Segoe UI',
+  "Segoe UI",
   roboto,
-  'Helvetica Neue',
+  "Helvetica Neue",
   helvetica,
   arial,
   sans-serif,
-  'Apple Color Emoji',
-  'Segoe UI Emoji',
-  'Segoe UI Symbol';
-$font-mono-family: sfmono-regular, menlo, monaco, consolas, 'Liberation Mono', 'Courier New', monospace;
-$font-base: 'OpenSans', $font-serif-family, sans-serif;
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-mono-family: sfmono-regular, menlo, monaco, consolas, "Liberation Mono",
+  "Courier New", monospace;
+$font-base: "OpenSans", $font-serif-family, sans-serif;
 
 /*
 * colors

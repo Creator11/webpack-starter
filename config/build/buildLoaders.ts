@@ -78,7 +78,7 @@ export function buildLoaders(options: BuildOptions): ModuleOptions["rules"] {
         loader: "ts-loader",
         options: {
           transpileOnly: true,
-          configFile: path.resolve(__dirname, "../tsconfig/tsconfig.json"),
+          // configFile: path.resolve(__dirname, "../tsconfig/tsconfig.json"),
           getCustomTransformers: () => ({
             before: [isDev && ReactRefreshTypeScript()].filter(Boolean),
           }),

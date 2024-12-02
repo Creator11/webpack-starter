@@ -1,8 +1,10 @@
-import type { Configuration as DevServerConfiguration } from 'webpack-dev-server';
-import { BuildOptions } from './types/types';
-import detectPort from 'detect-port';
+import type { Configuration as DevServerConfiguration } from "webpack-dev-server";
+import { BuildOptions } from "./types/types";
+import detectPort from "detect-port";
 
-export async function buildDevServer(options: BuildOptions): Promise<DevServerConfiguration> {
+export async function buildDevServer(
+  options: BuildOptions
+): Promise<DevServerConfiguration> {
   const defaultPort = options.port || 3000;
   const port = await detectPort(defaultPort);
 

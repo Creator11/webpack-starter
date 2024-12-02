@@ -7,7 +7,6 @@ import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 import WebpackBar from "webpackbar";
 import ReactRefreshWebpackPlugin from "@pmmmwh/react-refresh-webpack-plugin";
 import path from "path";
-import MonacoWebpackPlugin from "monaco-editor-webpack-plugin";
 
 export function buildPlugins({
   mode,
@@ -28,22 +27,13 @@ export function buildPlugins({
       __PLATFORM__: JSON.stringify(platform),
       __ENV__: JSON.stringify(mode),
     }),
-    new MonacoWebpackPlugin({
-      languages: ["javascript", "typescript", "css", "html", "json"],
-    }),
   ];
 
   if (isDev) {
     // plugins.push(new webpack.ProgressPlugin());
     plugins.push(new WebpackBar());
     //  выносит проверку типов
-    plugins.push(
-      new ForkTsCheckerWebpackPlugin({
-        typescript: {
-          configFile: path.resolve(__dirname, "../tsconfig/tsconfig.json"),
-        },
-      })
-    );
+    plugins.push(new ForkTsCheckerWebpackPlugin());
     // hot reload
     plugins.push(new ReactRefreshWebpackPlugin());
   }

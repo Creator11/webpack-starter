@@ -1,22 +1,29 @@
 {
   "compilerOptions": {
-    "outDir": "../../dist/",
+    "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "CommonJS",
-    "target": "es5",
+    "target": "esnext",
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "baseUrl": "../../",
+    "incremental": true,
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"]
     },
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "../globalts/global.d.ts"],
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./global.d.ts",
+    "config/babel/babel-standalone.ts"
+  ],
   "exclude": ["node_modules"],
+
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"

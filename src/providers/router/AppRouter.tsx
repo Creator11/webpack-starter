@@ -1,21 +1,25 @@
-import { Suspense } from 'react';
-import { RouterProvider, Navigate, createBrowserRouter } from 'react-router-dom';
-import { NotFound, HomePage } from '@/pages';
-import App from '@/App';
-import ErrorBoundary from '@/providers/ErrorBoundary/ErrorBoundary';
+import { Suspense } from "react";
+import {
+  RouterProvider,
+  Navigate,
+  createBrowserRouter,
+} from "react-router-dom";
+import { NotFound, HomePage } from "@/pages";
+import App from "@/App";
+import ErrorBoundary from "@/providers/ErrorBoundary/ErrorBoundary";
 
 const AppRouter = () => {
   const router = createBrowserRouter([
     {
-      path: '/',
+      path: "/",
       element: (
-                     <ErrorBoundary>
+        <ErrorBoundary>
           <App />
         </ErrorBoundary>
       ),
       children: [
         {
-          path: '/',
+          path: "/",
           element: (
             <Suspense>
               <ErrorBoundary>
@@ -24,9 +28,9 @@ const AppRouter = () => {
             </Suspense>
           ),
         },
-        { path: '/404', element: <NotFound /> },
+        { path: "/404", element: <NotFound /> },
         {
-          path: '*',
+          path: "*",
           element: <Navigate to="/404" replace />,
         },
       ],

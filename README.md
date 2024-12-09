@@ -90,6 +90,7 @@ const router = createHashRouter;
 - Source map позволяет дебажить в исходниках
 - WebpackBar визуализирует прогресс бар при сборке
 
+<<<<<<< HEAD
 ## настройка CI/CD
 
 на сервере обязательно должен быть ~/.ssh/authorized_keys !!
@@ -105,6 +106,8 @@ const router = createHashRouter;
 ```
  
  
+=======
+>>>>>>> 9cb6b9a (add license)
 ## Автор
 
 - [@troshin](https://github.com/dTroshin11)

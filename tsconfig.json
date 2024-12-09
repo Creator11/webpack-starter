@@ -20,11 +20,10 @@
   "include": [
     "./src/**/*.ts",
     "./src/**/*.tsx",
-    "./global.d.ts",
+    "config/globalts/global.d.ts",
     "config/babel/babel-standalone.ts"
   ],
   "exclude": ["node_modules"],
-
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"

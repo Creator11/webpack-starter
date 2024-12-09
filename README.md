@@ -1,18 +1,36 @@
 ![Logo](https://github.com/Creator11/webpack-starter/raw/main/src/assets/img/logo.jpg)
 
-# webpack TS bundle
+# Webpack Starter
+<p align="center">
+  <img src="https://img.shields.io/badge/Webpack-5.64.4-blue.svg" alt="Webpack">
+  <img src="https://img.shields.io/badge/JavaScript-ES6-yellow.svg" alt="JavaScript">
+  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
+  <a href="https://github.com/Creator11/webpack-starter">
+    <img src="https://img.shields.io/github/stars/Creator11/webpack-starter?style=social" alt="GitHub Stars">
+  </a>
+  <a href="https://github.com/Creator11/webpack-starter">
+    <img src="https://hits.dwyl.com/Creator11/webpack-starter.svg?style=flat" alt="Repository views">
+  </a>
+</p>
 
-cборка вебпак + тс + ci/cd
+A starter kit to quickly **set up** your JavaScript project with Webpack.  
+This is a configured Webpack build written in TypeScript for React + TypeScript development.
 
-## Основные фишки
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Scripts](#scripts)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-- source map
-- typeScript
-- bundle analyzer
-- lazy loading / bundle optimization
-- github ci/cd
-- dev/production bundle
-- Autoprefixer
+## Features
+- **Modern JavaScript**: Write ES6+ code with Babel.
+- **CSS and SCSS Support**: Import and bundle your styles.
+- **Development Server**: Live reloading with webpack-dev-server.
+- **Production Ready**: Minified and optimized builds.
+- **Code Splitting**: Improve load times with dynamic imports.
 
 ## скрипты
 

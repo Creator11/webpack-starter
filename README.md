@@ -2,7 +2,7 @@
 
 # Webpack Starter
 <p align="center">
-  <img src="https://img.shields.io/badge/Webpack-5.64.4-blue.svg" alt="Webpack">
+  <img src="https://img.shields.io/badge/Webpack-5.96.1-blue.svg" alt="Webpack">
   <img src="https://img.shields.io/badge/JavaScript-ES6-yellow.svg" alt="JavaScript">
   <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
   <a href="https://github.com/Creator11/webpack-starter">

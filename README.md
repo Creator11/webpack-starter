@@ -1,6 +1,7 @@
 <p align="center">
   <img src="https://github.com/Creator11/webpack-starter/raw/main/src/assets/img/logo.jpg" alt="Logo">
 </p>
+
 # Webpack Starter
 <p align="center">
   <img src="https://img.shields.io/badge/Webpack-5.96.1-blue.svg" alt="Webpack">
